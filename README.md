@@ -40,10 +40,10 @@ void loop() {
     // Define o brilho do LED vermelho
     analogWrite(ledVermelho, brilhoLed);
 
-    // Espera o tempo definido
+  // Espera o tempo definido
     delay(esperaBrilho);
 
-    // Incrementa o brilho
+  // Incrementa o brilho
     brilhoLed++;
   }
 
@@ -52,10 +52,10 @@ void loop() {
     // Define o brilho do LED vermelho
     analogWrite(ledVermelho, brilhoLed);
 
-    // Espera o tempo definido
+  // Espera o tempo definido
     delay(esperaBrilho);
 
-    // Decrementa o brilho
+  // Decrementa o brilho
     brilhoLed--;
   }
 }
@@ -85,7 +85,7 @@ void loop() {
     // Lê o caractere enviado
     String comandoAtivacao = Serial.readString();
 
-    // Altera o estado dos LEDs de acordo com o caractere recebido
+  // Altera o estado dos LEDs de acordo com o caractere recebido
     if(comandoAtivacao == "R"){
         analogWrite(ledVermelho, 255);
         analogWrite(ledVerde, 0);
